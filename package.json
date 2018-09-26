@@ -2,12 +2,12 @@
   "name": "my-app",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
+    "ng": "npm",
+    "start": "npm serve",
+    "build": "npm build",
+    "test": "npm test",
+    "lint": "npm lint",
+    "e2e": "npm e2e",
 	"heroku-prebuild":"npm install"
   },
   "private": true,

@@ -1,0 +1,46 @@
+.banner {
+    width: 100%;
+    height: calc(100% - 64px);
+    min-height: 100%;
+    position: relative;
+    color: #fff;
+
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: #3f51b5, $alpha: 0.3);
+        content: "";
+    }
+
+    .banner-image {
+        vertical-align: middle;
+        min-height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        background: none;
+        
+        .backstretch{
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+
+            img{
+                height: 100%;
+                width: 100%;
+                float: left;
+            }
+        }
+    }
+    .banner-caption {
+        position: absolute;
+        top: 20%;
+        width: 100%;
+        z-index: 2;
+        text-align: center;
+        font-weight: lighter;
+    }
+}

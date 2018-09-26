@@ -1,0 +1,57 @@
+.user-list{
+    height: 470px;
+    overflow-y: auto;
+    
+    &::-webkit-scrollbar {
+        width: 6px;
+        background-color: #F5F5F5;
+    } 
+    &::-webkit-scrollbar-thumb {
+        background-color: #000000;
+    }
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+    }
+
+    .item{
+        margin-bottom: 17px;
+        padding-right: 20px;
+    }
+}
+.user-card {
+    max-width: 100%;
+    padding: 0;
+
+    .mat-card-image{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .mat-card-header{
+        padding: 10px 5px;
+        .mat-card-title{
+            margin: 0;
+        }
+        .mat-card-subtitle{
+            margin: 0;
+            font-size: 12px;
+        }
+    }
+    .mat-card-content{
+        padding: 10px 5px;
+        margin: 8px;
+        div{
+            font-size: 11px;
+        }
+    }
+    .mat-card-actions{
+        padding: 5px 10px;
+        margin: 0;
+    }
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}

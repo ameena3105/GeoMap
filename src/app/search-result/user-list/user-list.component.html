@@ -1,0 +1,25 @@
+<div class="user-list" fxLayout="column" fxLayoutAlign="space-between stretch">
+  <div class="item" *ngFor="let user of users">
+    <mat-card class="user-card" fxLayout="row" fxLayoutAlign="space-between stretch">
+      <div fxFlex="40">
+          <img mat-card-image src="../../../assets/images/{{user.type}}.jpg">
+      </div>  
+      <div fxFlex="60">  
+        <mat-card-header>
+          <!-- <div mat-card-avatar class="example-header-image"></div> -->
+          <mat-card-title>{{user.name}}</mat-card-title>
+          <mat-card-subtitle>{{user.type}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          Address
+          <div>{{user.address}}</div>
+        </mat-card-content>
+        <mat-card-actions align="center">
+              <button mat-button color="primary">
+                  Edit
+              </button>
+          </mat-card-actions>
+      </div>
+    </mat-card>
+  </div>
+</div>

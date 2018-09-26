@@ -1,0 +1,16 @@
+<div class="filters mat-elevation-z1" fxLayout="row" fxLayoutAlign="start end" >
+  <div class="country">
+    <mat-form-field>
+      <mat-select placeholder="Select Country" [formControl]="countryCtrl" (selectionChange)="countryFilter()">
+        <mat-option *ngFor="let country of countries" [value]="country">{{country.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="phone-types">
+    <mat-form-field>
+      <mat-select placeholder="Select iPhone" [formControl]="phoneTypes" (selectionChange)="phoneFilter()" multiple>
+        <mat-option *ngFor="let phone of phones" [value]="phone">{{phone}}</mat-option>
+      </mat-select>
+    </mat-form-field> 
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div id="map-container" #mapContainer class="mat-elevation-z1 map-container">
+  <!-- <agm-map [latitude]="12.931834" [longitude]="77.6734893">
+    <agm-marker-cluster [imagePath]="'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'">
+      <ng-container *ngFor="let marker of coordinates" [ngSwitch]="marker.type">
+        <ng-container *ngSwitchCase="1">
+          <agm-marker  [latitude]="marker.lat" [longitude]="marker.lng">
+              <agm-info-window>34</agm-info-window>
+          </agm-marker>
+        </ng-container>
+        <ng-container *ngSwitchCase="2">
+            <agm-marker  [latitude]="marker.lat" [longitude]="marker.lng" [iconUrl]="'https://upload.wikimedia.org/wikipedia/commons/d/d1/Google_Maps_pin.svg'">
+              <agm-info-window>12</agm-info-window>
+            </agm-marker>
+          </ng-container>
+      </ng-container>
+    </agm-marker-cluster>
+  </agm-map> -->
+</div>
+
+<div id="infoWindowContent" #infoWindowContent>
+    <!-- <app-infowindow [infoWindowData]="filterData" [originalFilterData]="originalFilterData"></app-infowindow>
+     
+     <app-user-info [userData]="filterData"></app-user-info>-->
+     <div *ngIf="filterData">{{filterData.type}}</div>
+     
+</div>
+  

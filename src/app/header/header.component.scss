@@ -1,0 +1,28 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+.nav-bar{
+    height: 100%;
+
+    .mat-list-item,.mat-list-item.mat-list-item-with-avatar{
+        height: 100%;
+        color: #FFF;
+    }
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+
+    img{
+        height: 100%;
+        width: 100%;
+        vertical-align: middle;
+    }
+    .name{
+        font-size: 18px;
+        margin-left: 15px; 
+    }
+}

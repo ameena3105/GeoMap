@@ -45,7 +45,7 @@ import { UserInfoComponent } from './search-result/map/user-info/user-info.compo
   imports: [
     BrowserModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCdP3ITeChWb0ZTdnhwkHPmHB3fLo6TIGM'
+      //apiKey: 'Your API Refernce Key'
     }),
     AgmJsMarkerClustererModule,
     AppRoutingModule,
